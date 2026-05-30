@@ -4,4 +4,12 @@
     <loc>https://lianapsychologist.ru/</loc>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://lianapsychologist.ru/privacy.html</loc>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://lianapsychologist.ru/legal.html</loc>
+    <priority>0.3</priority>
+  </url>
 </urlset>
