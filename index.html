@@ -3,7 +3,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Лиана Абрамян — Гештальт-терапевт</title>
+  <title>Лиана Абрамян — психотерапевт, гештальт-терапевт в Санкт-Петербурге и онлайн</title>
+  <meta name="description" content="Лиана Абрамян — психотерапевт, гештальт-терапевт, EMDR-терапевт и специалист системно-феноменологического подхода. Индивидуальная терапия, семейная терапия, группы, расстановки и нумерологические консультации онлайн и в Санкт-Петербурге.">
+  <meta name="keywords" content="Лиана Абрамян, психолог Лиана Абрамян, психотерапевт Лиана Абрамян, гештальт-терапевт Санкт-Петербург, EMDR терапия, семейная терапия, расстановки Санкт-Петербург, консультация психолога онлайн, нумерологическая консультация">
+  <link rel="canonical" href="https://lianapsychologist.ru/">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#f7f3ed">
+
+  <meta property="og:title" content="Лиана Абрамян — психотерапевт, гештальт-терапевт">
+  <meta property="og:description" content="Индивидуальная терапия, семейная терапия, группы, расстановки и нумерологические консультации. Санкт-Петербург и онлайн.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:url" content="https://lianapsychologist.ru/">
+  <meta property="og:image" content="https://lianapsychologist.ru/hero_jpg_.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Лиана Абрамян",
+    "url": "https://lianapsychologist.ru/",
+    "image": "https://lianapsychologist.ru/hero_jpg_.jpg",
+    "description": "Психотерапевт, гештальт-терапевт, EMDR-терапевт и специалист системно-феноменологического подхода. Консультации онлайн и в Санкт-Петербурге.",
+    "areaServed": ["Санкт-Петербург", "онлайн"],
+    "availableLanguage": ["Russian"],
+    "sameAs": [
+      "https://t.me/lianaabramian",
+      "https://rutube.ru/video/fe00709f1eb4ec41810c707b54aeeeab/?r=a"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Санкт-Петербург",
+      "addressCountry": "RU"
+    },
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Индивидуальная сессия",
+        "price": "8000",
+        "priceCurrency": "RUB"
+      },
+      {
+        "@type": "Offer",
+        "name": "Семейная терапия",
+        "price": "10000",
+        "priceCurrency": "RUB"
+      }
+    ]
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,13 +61,15 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
-      --primary: #1a1614;
-      --cream: #f7f3ed;
-      --terracotta: #b8846e;
-      --sage: #7a8f7e;
-      --warm-gray: #d4cdc3;
-      --gold: #c9a875;
-      --white: #ffffff;
+      --primary: #17120f;
+      --cream: #f5efe6;
+      --terracotta: #a87662;
+      --sage: #647365;
+      --warm-gray: #d7cfc4;
+      --gold: #c2a06d;
+      --white: #fffdf9;
+      --ink-soft: rgba(23, 18, 15, 0.72);
+      --line: rgba(168, 118, 98, 0.18);
     
       /* Responsive scale */
       --pad: clamp(1.25rem, 3vw, 4rem);
@@ -1100,6 +1150,238 @@
 }
 
 
+  
+
+
+/* Editorial upgrades */
+.hero{
+  position: relative;
+}
+.hero::before{
+  content:'';
+  position:absolute;
+  left: var(--pad);
+  top: 7.2rem;
+  width: min(42vw, 520px);
+  height: min(42vw, 520px);
+  border: 1px solid rgba(168,118,98,.16);
+  transform: rotate(-7deg);
+  pointer-events: none;
+}
+.hero-statement{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.55rem, 2.4vw, 2.35rem);
+  line-height: 1.22;
+  color: var(--primary);
+  margin: 0 0 2rem;
+  max-width: 650px;
+  letter-spacing: .5px;
+}
+.hero-statement em{
+  color: var(--terracotta);
+  font-style: italic;
+}
+.hero-chips{
+  display:flex;
+  flex-wrap: wrap;
+  gap: .7rem;
+  margin: 0 0 2rem;
+}
+.hero-chip{
+  border: 1px solid var(--line);
+  background: rgba(255,253,249,.55);
+  padding: .55rem .9rem;
+  font-size: .82rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(23,18,15,.78);
+}
+.hero-description strong{ color: var(--primary); }
+.section-kicker{
+  max-width: 880px;
+  margin: -2.8rem auto 4rem;
+  text-align: center;
+  color: var(--ink-soft);
+  line-height: 2;
+  font-size: 1.05rem;
+}
+#process{
+  background: linear-gradient(180deg, var(--white), var(--cream));
+}
+.process-grid{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.4rem;
+  margin-top: 4rem;
+}
+.process-card{
+  background: rgba(255,253,249,.74);
+  border: 1px solid var(--line);
+  padding: 2.4rem 2rem;
+  min-height: 270px;
+  position: relative;
+  transition: all .45s cubic-bezier(.4,0,.2,1);
+}
+.process-card::before{
+  content: attr(data-step);
+  position:absolute;
+  top: 1.1rem;
+  right: 1.4rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3.2rem;
+  line-height: 1;
+  color: rgba(168,118,98,.18);
+}
+.process-card:hover{
+  transform: translateY(-8px);
+  background: var(--white);
+  box-shadow: 0 24px 70px rgba(168,118,98,.12);
+}
+.process-card h3{
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  max-width: 220px;
+}
+.process-card p{
+  color: var(--ink-soft);
+  line-height: 1.9;
+  font-size: .98rem;
+}
+.editorial-quote{
+  margin-top: 3rem;
+  padding: 3.2rem;
+  background: var(--primary);
+  color: var(--cream);
+  display:grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.editorial-quote::after{
+  content:'';
+  position:absolute;
+  right:-90px;
+  top:-90px;
+  width:230px;
+  height:230px;
+  border: 1px solid rgba(168,118,98,.34);
+  transform: rotate(14deg);
+}
+.editorial-quote p{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.6rem, 2.6vw, 2.7rem);
+  line-height: 1.18;
+  position: relative;
+  z-index: 1;
+}
+.editorial-quote a{ position: relative; z-index:1; }
+@media (max-width: 1200px){
+  .process-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px){
+  .hero::before{ display:none; }
+  .hero-statement{ font-size: 1.55rem; }
+  .process-grid{ grid-template-columns: 1fr; }
+  .editorial-quote{ grid-template-columns: 1fr; padding: 2.2rem; }
+}
+
+/* Professional frame + footer */
+#professional { background: var(--white); }
+.professional-grid{
+  display:grid;
+  grid-template-columns: .95fr 1.05fr;
+  gap: 3rem;
+  align-items: stretch;
+  margin-top: 4rem;
+}
+.professional-lead{
+  background: var(--primary);
+  color: var(--cream);
+  padding: 3.8rem;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+.professional-lead::after{
+  content:'';
+  position:absolute;
+  right:-110px;
+  bottom:-110px;
+  width:260px;
+  height:260px;
+  border: 2px solid rgba(184,132,110,.35);
+  transform: rotate(-10deg);
+}
+.professional-lead h3{
+  font-size: 2.8rem;
+  margin-bottom: 1.4rem;
+  color: var(--cream);
+}
+.professional-lead p{
+  line-height: 2;
+  color: rgba(247,243,237,.86);
+  margin-bottom: 1.2rem;
+}
+.professional-list{
+  display:grid;
+  gap: 1.2rem;
+}
+.professional-item{
+  background: var(--cream);
+  border: 1px solid rgba(184,132,110,.18);
+  padding: 2rem;
+  transition: all .45s cubic-bezier(.4,0,.2,1);
+}
+.professional-item:hover{
+  transform: translateY(-6px);
+  background: var(--white);
+  box-shadow: 0 20px 60px rgba(184,132,110,.12);
+}
+.professional-item h4{
+  font-size: 1.7rem;
+  margin-bottom: .7rem;
+}
+.professional-item p{
+  line-height: 1.9;
+  opacity: .86;
+}
+.service-note{
+  margin-top: 2rem;
+  padding: 1.8rem 2rem;
+  background: rgba(184,132,110,.07);
+  border-left: 3px solid var(--terracotta);
+  color: rgba(26,22,20,.78);
+  line-height: 1.9;
+}
+.footer-links{
+  margin-top: 1rem;
+  display:flex;
+  gap: 1.4rem;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.footer-links a{
+  color: var(--warm-gray);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(212,205,195,.35);
+  transition: all .3s ease;
+}
+.footer-links a:hover{
+  color: var(--terracotta);
+  border-bottom-color: var(--terracotta);
+}
+.footer-muted{
+  margin-top: .8rem;
+  color: rgba(247,243,237,.62);
+  font-size: .86rem;
+  line-height: 1.8;
+}
+@media (max-width: 1200px){
+  .professional-grid{ grid-template-columns: 1fr; }
+}
+
   </style>
 </head>
 
@@ -1113,8 +1395,10 @@
         <li><a href="#experience">опыт</a></li>
         <li><a href="#problems">запросы</a></li>
         <li><a href="#trust">почему я</a></li>
+        <li><a href="#professional">рамка</a></li>
+        <li><a href="#process">процесс</a></li>
         <li><a href="#services">услуги</a></li>
-        <li><a href="#groups">группы</a></li>
+        <li><a href="#groups">форматы</a></li>
         <li><a href="#podcast">подкаст</a></li>
         <li><a href="#contact">контакты</a></li>
       </ul>
@@ -1125,12 +1409,21 @@
   <!-- Hero Section -->
   <section class="hero" id="top">
     <div class="hero-text">
-      <div class="hero-subtitle">психолог-консультант</div>
+      <div class="hero-subtitle">психотерапевт • гештальт-терапевт</div>
       <h1>Лиана<br>Абрамян</h1>
-      <h2>Гештальт-терапевт</h2>
+      <h2>EMDR • системный подход • терапия отношений</h2>
+      <div class="hero-statement">
+        Психотерапия для тех, кто хочет не просто <em>понять себя</em>, а изменить способ жить, чувствовать и выбирать.
+      </div>
+      <div class="hero-chips" aria-label="Основные направления работы">
+        <span class="hero-chip">индивидуально</span>
+        <span class="hero-chip">семейная терапия</span>
+        <span class="hero-chip">EMDR</span>
+        <span class="hero-chip">расстановки</span>
+      </div>
       <p class="hero-description">
-        Специалист в области EMDR-терапии, гештальт-терапии и системно-феноменологического подхода.
-        Более 8 лет помогаю людям находить внутреннюю гармонию.
+        <strong>Лиана Абрамян</strong> — психотерапевт, гештальт-терапевт, EMDR-терапевт и специалист системно-феноменологического подхода.
+        Более 8 лет сопровождаю клиентов в темах отношений, тревоги, травматического опыта, внутренней опоры и личных изменений.
       </p>
       <a href="#contact" class="cta-button">Записаться на консультацию</a>
     </div>
@@ -1154,9 +1447,9 @@
         </div>
         <div class="about-content fade-in">
           <h3>Лиана Абрамян</h3>
-          <p>Гештальт-терапевт. Психолог-консультант.</p>
+          <p>Психотерапевт. Гештальт-терапевт. Психолог-консультант.</p>
           <p>Выпускница Санкт-Петербургского Государственного Университета, Факультет Психологии.</p>
-          <p>Преподаватель учебных программ в институте ИСТиК.</p>
+          <p>Преподаватель учебных программ в институте ИСТиК. Веду индивидуальную и семейную терапию, терапевтические группы, расстановочные форматы и консультации по нумерологии.</p>
 
           <div class="credentials">
             <h4>Образование и квалификация</h4>
@@ -1272,7 +1565,7 @@
       </div>
 
       <p class="problem-note fade-in">
-        Если ты не уверен(а), подходит ли твой запрос — напиши мне: мы вместе уточним формулировку и выберем формат работы.
+        Если вы не уверены, подходит ли ваш запрос, напишите мне: мы вместе уточним формулировку и выберем формат работы.
       </p>
     </div>
   </section>
@@ -1290,12 +1583,12 @@
         <div class="trust-lead fade-in">
           <h3>Бережно. Структурно. В контакте.</h3>
           <p>
-            Я строю терапию так, чтобы тебе было безопасно говорить о важном и постепенно возвращать ощущение опоры.
+            Я строю терапию так, чтобы вам было безопасно говорить о важном и постепенно возвращать ощущение опоры.
             Мы не «ломаем» — мы аккуратно распутываем и собираем новое качество жизни.
           </p>
           <p>
             В работе я опираюсь на современную психотерапию: гештальт-подход, EMDR и системно-феноменологическое мышление —
-            и подбираю темп под тебя.
+            и подбираю темп под ваш запрос, состояние и готовность к изменениям.
           </p>
 
           <div class="trust-stats">
@@ -1316,41 +1609,125 @@
 
         <div class="trust-cards">
           <div class="trust-card fade-in">
-            <h4>Понятный процесс</h4>
-            <p>С первой встречи мы уточняем запрос, формируем цели и выбираем подходящий формат работы — без хаоса и «угадывания».</p>
+            <h4>Ясная терапевтическая рамка</h4>
+            <p>С первой встречи мы уточняем запрос, состояние, ожидания и формат. Это помогает понимать, куда движется работа и на что мы опираемся.</p>
           </div>
 
           <div class="trust-card fade-in">
-            <h4>Безопасность и границы</h4>
-            <p>Я внимательно держу рамку, конфиденциальность и бережный темп. Это создаёт доверие — и даёт глубину.</p>
+            <h4>Конфиденциальность и границы</h4>
+            <p>В работе важны бережность, ясные договорённости и уважение к личной истории клиента. Именно это создаёт пространство для глубины.</p>
           </div>
 
           <div class="trust-card fade-in">
-            <h4>Опора на методы</h4>
-            <p>Терапия — это не разговор «в никуда». Я опираюсь на методологию, чтобы изменения были устойчивыми.</p>
+            <h4>Опора на методы и опыт</h4>
+            <p>Это не разговор «в никуда»: в основе работы — методы, профессиональная практика, личная терапия и постоянное обучение.</p>
           </div>
 
           <div class="trust-card fade-in">
-            <h4>Тепло без давления</h4>
-            <p>Можно приходить в любой точке: когда страшно, стыдно, сложно. Мы найдём слова и опору вместе.</p>
+            <h4>Глубина без давления</h4>
+            <p>В терапии не нужно быть готовым идеально. Можно приходить в растерянности, сомнениях и усталости — мы будем искать слова и опору постепенно.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Professional Frame Section -->
+  <section id="professional">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-number">05</div>
+        <h2 class="section-title">Профессиональная рамка</h2>
+        <p class="section-subtitle">То, на чём держится терапевтическая работа</p>
+      </div>
+
+      <div class="professional-grid">
+        <div class="professional-lead fade-in">
+          <h3>Глубина без давления</h3>
+          <p>
+            Моя работа строится на сочетании терапевтической глубины, ясной профессиональной рамки и бережного контакта.
+            В терапии важно не только говорить о сложном, но и выдерживать темп, в котором изменения становятся возможными.
+          </p>
+          <p>
+            Я опираюсь на гештальт-подход, EMDR-терапию, системно-феноменологическое мышление и регулярную профессиональную практику.
+          </p>
+        </div>
+
+        <div class="professional-list">
+          <div class="professional-item fade-in">
+            <h4>Конфиденциальность</h4>
+            <p>Всё, что происходит в терапевтическом пространстве, остаётся в рамках профессиональной этики и уважения к личной истории клиента.</p>
+          </div>
+          <div class="professional-item fade-in">
+            <h4>Методологическая опора</h4>
+            <p>Работа не строится на случайных советах. Мы исследуем переживания, повторяющиеся сценарии и способы контакта с собой и другими.</p>
+          </div>
+          <div class="professional-item fade-in">
+            <h4>Регулярная практика</h4>
+            <p>Более 8 лет практики, постоянное обучение, терапевтические группы, личная терапия и профессиональное развитие.</p>
+          </div>
+          <div class="professional-item fade-in">
+            <h4>Разные форматы</h4>
+            <p>Индивидуальная терапия, семейная терапия, группы, расстановки, нумерологические консультации и образовательные форматы.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Process Section -->
+  <section id="process">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-number">06</div>
+        <h2 class="section-title">Как проходит работа</h2>
+        <p class="section-subtitle">Понятный путь от первого сообщения до регулярной терапии</p>
+      </div>
+
+      <p class="section-kicker fade-in">
+        Иногда человеку сложно записаться не потому, что он не готов к изменениям, а потому что непонятно, что будет происходить дальше. Поэтому я стараюсь делать процесс ясным: с понятным входом, бережным темпом и уважением к вашему состоянию.
+      </p>
+
+      <div class="process-grid">
+        <div class="process-card fade-in" data-step="01">
+          <h3>Первый контакт</h3>
+          <p>Вы пишете в Telegram и коротко описываете, что сейчас важно: состояние, запрос, формат или вопрос по ближайшим группам.</p>
+        </div>
+        <div class="process-card fade-in" data-step="02">
+          <h3>Уточнение запроса</h3>
+          <p>На первой встрече мы бережно собираем контекст, формулируем запрос и смотрим, какой формат будет наиболее подходящим.</p>
+        </div>
+        <div class="process-card fade-in" data-step="03">
+          <h3>Выбор формата</h3>
+          <p>Это может быть индивидуальная терапия, семейная работа, группа, расстановка или нумерологическая консультация.</p>
+        </div>
+        <div class="process-card fade-in" data-step="04">
+          <h3>Регулярная работа</h3>
+          <p>Дальше мы двигаемся в согласованном темпе: через контакт, осознавание, чувства, тело, отношения и устойчивые изменения.</p>
+        </div>
+      </div>
+
+      <div class="editorial-quote fade-in">
+        <p>В терапии не нужно заранее знать “правильный ответ”. Достаточно начать с того, что уже есть.</p>
+        <a class="cta-button" href="#contact">Написать</a>
+      </div>
+    </div>
+  </section>
+
 <section id="manifest">
   <div class="container">
     <div class="section-header fade-in">
-      <div class="section-number">05</div>
+      <div class="section-number">07</div>
       <h2 class="section-title">Терапия — это место, где можно выдохнуть</h2>
       <p class="section-subtitle">Без спешки. Без оценки. С опорой.</p>
     </div>
 
     <div class="manifest-card fade-in">
-      <h3 class="manifest-title">Я здесь, чтобы помочь тебе вернуться к себе</h3>
+      <h3 class="manifest-title">Я здесь, чтобы помочь вам вернуться к себе</h3>
       <p class="manifest-text">
         Иногда достаточно одного безопасного пространства, чтобы впервые честно услышать себя.
-        Мы не “чинем” человека — мы возвращаем контакт, ясность и внутреннюю устойчивость.
+        Мы не “чиним” человека — мы возвращаем контакт, ясность и внутреннюю устойчивость.
       </p>
 
       <ul class="manifest-points">
@@ -1371,7 +1748,7 @@
   <section id="services">
     <div class="container">
       <div class="section-header fade-in">
-        <div class="section-number">05</div>
+        <div class="section-number">08</div>
         <h2 class="section-title">Услуги</h2>
         <p class="section-subtitle">Форматы работы</p>
       </div>
@@ -1380,31 +1757,42 @@
 
         <div class="service-card fade-in">
           <h3>Индивидуальная сессия</h3>
-          <div class="service-price">7 777₽</div>
-          <div class="service-details">100$ / 90€ • Онлайн / Zoom • 90 минут</div>
-          <p>Для данного формата встречи рекомендуется определить личный запрос. Идеально для проработки одного или нескольких запросов.</p>
+          <div class="service-price">8 000₽</div>
+          <div class="service-details">Онлайн / Zoom • 90 минут</div>
+          <p>Индивидуальная работа с личным запросом: отношения, тревога, самооценка, опора, повторяющиеся сценарии, кризисные состояния и внутренние конфликты.</p>
         </div>
 
         <div class="service-card fade-in">
           <h3>Семейная терапия</h3>
           <div class="service-price">10 000₽</div>
-          <div class="service-details">130$ / 115€ • Онлайн / Zoom • 90–120 минут</div>
-          <p>Работа с парными и семейными запросами, улучшение коммуникации и решение конфликтов в отношениях.</p>
+          <div class="service-details">Онлайн / Zoom • 90–120 минут</div>
+          <p>Работа с парными и семейными запросами: коммуникация, конфликты, близость, границы, доверие и повторяющиеся сценарии в отношениях.</p>
+        </div>
+
+        <div class="service-card fade-in">
+          <h3>Нумерологическая консультация</h3>
+          <div class="service-price">по запросу</div>
+          <div class="service-details">Онлайн • индивидуальный разбор</div>
+          <p>Формат для тех, кто хочет посмотреть на личные сценарии, отношения, деньги, предназначение и повторяющиеся жизненные темы через нумерологический разбор.</p>
         </div>
 
         <div class="service-card fade-in">
           <h3>Расстановка очно</h3>
-          <div class="service-price">12 000₽</div>
+          <div class="service-price">по запросу</div>
           <div class="service-details">Санкт-Петербург • 2–3 часа</div>
-          <p>Системно-феноменологический подход для работы с семейными и родовыми сценариями.</p>
+          <p>Системно-феноменологический подход для работы с семейными, родовыми и повторяющимися жизненными сценариями. Ближайшие даты уточняются в Telegram.</p>
         </div>
 
         <div class="service-card fade-in">
           <h3>Расстановка онлайн</h3>
-          <div class="service-price">10 000₽</div>
+          <div class="service-price">по запросу</div>
           <div class="service-details">Онлайн / Zoom • 2–3 часа</div>
-          <p>Онлайн-формат расстановки для работы с системными запросами дистанционно.</p>
+          <p>Дистанционный формат для работы с системными запросами, когда важно исследовать ситуацию глубже и увидеть скрытую динамику процесса.</p>
         </div>
+      </div>
+
+      <div class="service-note fade-in">
+        Консультации и терапевтическая работа не являются экстренной медицинской помощью. При острых состояниях, риске причинения вреда себе или другим, а также при необходимости медикаментозной поддержки важно обратиться к профильному врачу или в экстренные службы.
       </div>
     </div>
   </section>
@@ -1413,64 +1801,55 @@
   <section id="groups">
     <div class="container">
       <div class="section-header fade-in">
-        <div class="section-number">06</div>
-        <h2 class="section-title">Терапевтические группы</h2>
-        <p class="section-subtitle">Расписание на ближайшие месяцы</p>
+        <div class="section-number">09</div>
+        <h2 class="section-title">Группы, расстановки и актуальные форматы</h2>
+        <p class="section-subtitle">Расписание обновляется — ближайшие даты и условия участия можно уточнить в Telegram</p>
       </div>
 
     <div class="groups-hero">
   <div class="groups-intro fade-in">
-    <h3>Что такое гештальт-группа?</h3>
-    <p>Гештальт-группа — это формат психотерапии, где 6–12 участников под руководством терапевта исследуют свои чувства, потребности и способы взаимодействия с другими в настоящем моменте.</p>
-    <p>Это безопасная среда для осознания привычных жизненных сценариев, улучшения навыков общения, завершения незакрытых ситуаций и получения поддержки.</p>
+    <h3>Актуальные форматы работы</h3>
+    <p>Помимо индивидуальной терапии, Лиана проводит терапевтические группы, групповые расстановки и тематические консультации. Форматы меняются в зависимости от сезона, запроса участников и расписания.</p>
+    <p>Чтобы узнать ближайшие даты, условия участия и выбрать подходящий формат, напишите в Telegram — так информация всегда будет актуальной.</p>
   </div>
 
   <div class="groups-photo fade-in">
     <img src="groups.jpg" alt="Лиана Абрамян — терапевтические группы" loading="lazy">
-    <div class="cap">Терапевтические группы — это пространство бережного контакта, поддержки и живого опыта рядом с другими.</div>
+    <div class="cap">Групповые форматы — это пространство бережного контакта, поддержки и живого опыта рядом с другими.</div>
   </div>
 </div>
 
 
       <div class="groups-list">
         <div class="group-card fade-in">
-          <h3>Группа «Эмоции и чувства»</h3>
-          <div class="group-date">28 февраля, 1 марта • ОНЛАЙН • 10:00–18:00</div>
-          <p>Двухдневный тренинг для глубокой работы с эмоциональной сферой.</p>
-          <div class="group-price">20 000₽</div>
+          <h3>Групповые расстановки</h3>
+          <div class="group-date">Актуальные даты — по запросу в Telegram</div>
+          <p>Очный и/или онлайн-формат для работы с семейными, родовыми и системными темами. Можно участвовать со своим запросом или в роли заместителя — условия и ближайшие даты уточняются индивидуально.</p>
+          <div class="group-price">стоимость и формат участия уточняются</div>
         </div>
 
         <div class="group-card fade-in">
-          <h3>Группа «ОТНОШЕНИЯ»</h3>
-          <div class="group-date">Вторники раз в 2 недели • ОНЛАЙН • 19:00–22:00</div>
-          <p>17 февраля, 3, 17, 31 марта, 14, 28 апреля, 12, 26 мая, 9, 23 июня</p>
-          <div class="group-price">6 000₽ за встречу</div>
+          <h3>Терапевтические группы</h3>
+          <div class="group-date">Расписание обновляется в течение сезона</div>
+          <p>Группы для исследования отношений, чувств, самоценности, денег, личных границ и повторяющихся сценариев. Это формат, где важны не только знания, но и живой опыт рядом с другими участниками.</p>
+          <div class="group-price">запись через Telegram</div>
         </div>
 
         <div class="group-card fade-in">
-          <h3>Группа «Весеннее равноденствие»</h3>
-          <div class="group-date">21 марта • ОНЛАЙН</div>
-          <p>Группа 1 дня на основе колеса года — запустим все весенние процессы.</p>
-          <div class="group-price">5 555₽</div>
+          <h3>Консультации по нумерологии</h3>
+          <div class="group-date">Индивидуальный формат • онлайн</div>
+          <p>Разбор личных сценариев, отношений, денег, предназначения и повторяющихся жизненных тем через нумерологическую систему. Подходит тем, кто хочет получить более структурный взгляд на себя и свои процессы.</p>
+          <div class="group-price">детали уточняются при записи</div>
         </div>
 
         <div class="group-card fade-in">
-          <h3>Группа «Деньги»</h3>
-          <div class="group-date">14, 15, 28 марта • МСК очно • 10:00–18:00</div>
-          <p>Трехдневный тренинг для работы с денежными убеждениями и блоками.</p>
-          <div class="group-price">30 000₽</div>
-        </div>
-
-        <div class="group-card fade-in">
-          <h3>Группа расстановок</h3>
-          <div class="group-date">29 марта • МСК очно / 4 апреля • СПБ очно</div>
-          <p>Участие клиентом: 12 000₽ • Участие заместителем: 2 000₽</p>
-        </div>
-
-        <div class="group-card fade-in">
-          <h3>Программа в Дубае</h3>
-          <div class="group-date">20–30 апреля • Дубай</div>
-          <p>2 дня группы «Деньги» и 1 день расстановок. Детали уточняйте.</p>
+          <h3>Как выбрать формат?</h3>
+          <div class="group-date">Если вы сомневаетесь — можно просто написать</div>
+          <p>Не обязательно заранее понимать, нужна ли вам индивидуальная терапия, группа, расстановка или нумерологический разбор. Достаточно коротко описать запрос — и Лиана поможет выбрать ближайший подходящий шаг.</p>
+          <div class="manifest-actions">
+            <a class="cta-button" href="https://t.me/lianaabramian" target="_blank" rel="noopener">Уточнить расписание</a>
+            <a class="btn-soft" href="#services">Посмотреть услуги</a>
+          </div>
         </div>
       </div>
     </div>
@@ -1480,7 +1859,7 @@
   <section id="podcast">
     <div class="container">
       <div class="section-header fade-in">
-        <div class="section-number">07</div>
+        <div class="section-number">10</div>
         <h2 class="section-title">Подкаст</h2>
         <p class="section-subtitle">Голос, который помогает останавливаться и слышать себя</p>
       </div>
@@ -1536,7 +1915,7 @@
   <section id="contact">
     <div class="container">
       <div class="section-header fade-in">
-        <div class="section-number">08</div>
+        <div class="section-number">11</div>
         <h2 class="section-title">Контакты</h2>
         <p class="section-subtitle">Свяжитесь со мной удобным способом</p>
       </div>
@@ -1561,8 +1940,7 @@
     <div class="contact-bottom fade-in">
       <div class="mini">Напишите мне — и мы спокойно уточним, с чего начать</div>
       <div class="hint">
-        Коротко опишите, что вас сейчас беспокоит, и какой формат вам ближе (индивидуально / группа).
-        Я отвечу и предложу следующий шаг.
+        Коротко опишите, что вас сейчас беспокоит, и какой формат вам ближе: индивидуальная терапия, семейная терапия, группа, расстановка или нумерологическая консультация. Я отвечу и предложу следующий шаг.
       </div>
       <div class="fineprint">Конфиденциально • Бережно • В удобном темпе</div>
     </div>
@@ -1580,7 +1958,14 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>© 2025 Лиана Абрамян • Психолог-консультант • Гештальт-терапевт</p>
+      <p>© 2026 Лиана Абрамян • Психотерапевт • Гештальт-терапевт • Санкт-Петербург / онлайн</p>
+      <div class="footer-links">
+        <a href="https://t.me/lianaabramian" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://rutube.ru/video/fe00709f1eb4ec41810c707b54aeeeab/?r=a" target="_blank" rel="noopener">Rutube</a>
+      </div>
+      <div class="footer-muted">
+        Сайт носит информационный характер. Для записи и уточнения формата работы напишите в Telegram.
+      </div>
     </div>
   </footer>
 
@@ -1620,7 +2005,7 @@
     });
 
     // Active nav link on scroll (NEW)
-    const sectionIds = ['about','experience','problems','trust','services','groups','podcast','contact'];
+    const sectionIds = ['about','experience','problems','trust','professional','process','services','groups','podcast','contact'];
     const navLinks = Array.from(document.querySelectorAll('.nav-links a'));
 
     function setActive(id) {
